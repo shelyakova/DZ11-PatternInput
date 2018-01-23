@@ -1,0 +1,65 @@
+<!DOCTYPEhtml>
+
+<html>
+	<head>
+		<meta charset>
+		<title>Binnary Inputs</title>
+		
+		<style>
+			.columnOne {
+				width: 200px;
+				height: 400px;
+				display: inline-block;
+				float: left;
+			}
+			
+			.columnTwo {
+				width: 200px;
+				height: 400px;
+				display: inline-block;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "columnOne">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			
+			<br>
+			<br>
+			
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+		</div>
+		
+		<div class = "columnTwo">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			
+			<br>
+			<br>
+			
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+			<input type="text" onkeyup="validate(this)">
+		</div>
+		
+		<script>
+			function validate(inp) {
+				inp.value = inp.value.replace(/[^0-1]*/g, '');
+			}		
+		</script>
+	</body>
+</html>
